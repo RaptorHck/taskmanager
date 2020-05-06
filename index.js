@@ -1,6 +1,6 @@
 const express = require('express');
 const connectDB = require('./config/db');
-const cors = require('cors');
+const allowCrossDomain = require('cors');
 
 
 
@@ -11,7 +11,7 @@ const app = express();
 connectDB();
 
 //Habilitar cors
-app.use(allowCrossDomain);
+app.use(allowCrossDomain());
 
 //Habilidatr express.json
 
