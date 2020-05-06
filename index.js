@@ -11,7 +11,7 @@ const app = express();
 connectDB();
 
 //Habilitar cors
-app.use(cors());
+app.use(allowCrossDomain);
 
 //Habilidatr express.json
 
