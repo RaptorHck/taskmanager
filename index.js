@@ -26,7 +26,7 @@ app.use('/api/tasks',       require('./routes/tasks'));
 
 
 //Puesrto de la app
-const PORT = process.env.PORT || 4000;
+const port = process.env.port || 4000;
 
 //Definir la pagina principal
 /*
@@ -36,7 +36,7 @@ app.get('', (req, res) => {
 */
 
 //Iniciar la app 
-app.listen(PORT, () => {
+app.listen(port, '0.0.0.0', () => {
     console.log(`A Serv is running, listen in port ${PORT}`);
 });
 
